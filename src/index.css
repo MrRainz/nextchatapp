@@ -1,13 +1,79 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: rgb(92, 0, 197) !important;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.container{
+    max-width: 90vw !important;
+    margin-top: 0.5vh;
+}
+
+.displayBoard{
+    background-color: rgb(230, 230, 230);
+    height: 65vh;
+    margin: 1vh;
+    overflow: auto;
+    border: 3px solid black !important;
+    border-radius: 2vh;
+}
+
+.messageInput{
+    height: 20vh;
+    background-color: rgb(230, 230, 230);
+    margin: 1vh;
+    border: 3px solid black !important;
+    border-radius: 2vh;
+}
+
+.onlineUsers{
+    background-color: rgb(230, 230, 230);
+    height: 65vh;
+    margin: 1vh;
+    overflow: auto;
+    border: 3px solid black !important;
+    border-radius: 2vh;
+}
+
+#inputBox {
+    height: 100%;
+}
+
+#inputButton {
+    height: 100%;
+    width: 10vw;
+    border-radius: 1.5vh;
+    background-color: darkgray;
+    border: none;
+    box-shadow: none;
+}
+
+#inputText {
+    border-radius: 2vh;
+    background-color: rgb(230, 230, 230);
+    overflow: auto;
+    border: none;
+    height: 100% !important;
+    width: 80vw;
+    box-shadow: none;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    min-height: 10vh;
+    padding: 1vw;
+    border: 1px solid black;
+    margin: 1vw;
+    border-radius: 1vh;
 }
