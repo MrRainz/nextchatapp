@@ -43,7 +43,7 @@ const MessageInput = ({currentUser}) => {
         <div className="messageInput">
                 <Form style={{display: "flex", height: "100%"}}>
                     <div id="inputBox">
-                        <Input type="textarea" name="text" id="textBox" placeholder="Type your message here..." value={text} onKeyDown={e => handleKeyboardSubmit(e)} onChange={e => handleChange(e)} id="inputText"></Input>
+                        <Input type="textarea" name="text" placeholder="Type your message here..." value={text} onKeyDown={e => handleKeyboardSubmit(e)} onChange={e => handleChange(e)} id="inputText"></Input>
                     </div>
                     <Button color="primary" onClick={handleSubmit} id="inputButton" disabled={button}>Send</Button>
                     <p style={{position: "absolute", top: "18vh", right: "10vw", color: color}}>{text.length}</p>
